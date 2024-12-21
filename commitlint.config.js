@@ -16,6 +16,7 @@ module.exports = {
         'ci', // Continuous integration-related changes.
         'build', // Changes that affect the build system or external dependencies
         'revert', // Reverting a previous commit.
+        'merge', // Merge commit
       ], // Allowed types
     ],
     // Scope rules (optional)
@@ -23,4 +24,10 @@ module.exports = {
     'subject-min-length': [2, 'always', 10], // Subject must be at least 10 characters long
     'subject-case': [0], // Disable subject case checking
   },
+  ignores: [
+    // Allow specific patterns for pull/merge request commits
+    commit =>
+      commit.startsWith('Merge pull request') ||
+      commit.startsWith('Merged branch'),
+  ],
 };

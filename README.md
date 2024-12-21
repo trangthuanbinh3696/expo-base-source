@@ -52,3 +52,4 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
      - ci: Continuous integration-related changes.
      - build: Changes that affect the build system or external dependencies
      - revert: Reverting a previous commit.
+     - merge: Merge commits.
