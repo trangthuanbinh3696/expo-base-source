@@ -1,0 +1,8 @@
+{
+  "welcome": "Welcome",
+  "login_screen": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password"
+  }
+}

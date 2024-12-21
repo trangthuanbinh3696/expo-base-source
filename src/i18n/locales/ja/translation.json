@@ -1,0 +1,8 @@
+{
+  "welcome": "ようこそ",
+  "login_screen": {
+    "title": "ログイン",
+    "username": "ユーザー名",
+    "password": "パスワード"
+  }
+}
