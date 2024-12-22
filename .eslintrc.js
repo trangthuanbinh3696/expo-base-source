@@ -25,5 +25,12 @@ export default {
     'react-hooks/exhaustive-deps': 0,
     'react-compiler/react-compiler': 'error',
     'prettier/prettier': 'error',
+    '@typescript-eslint/quotes': [
+      'error',
+      'single',
+      {
+        allowTemplateLiterals: true,
+      },
+    ],
   },
 };

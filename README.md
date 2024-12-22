@@ -24,7 +24,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
    - Folder Naming: kebab-case
    - Component Naming: PascalCase
-   - File Naming: PascalCase
+   - Component File Naming: PascalCase
+   - Javascript/Tpyescript File Naming: camelCase
    - Variables Naming: camelCase
    - Constant Naming: UPPERCASE
    - Props and State Naming: camelCase
