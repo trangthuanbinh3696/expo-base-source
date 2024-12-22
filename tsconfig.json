@@ -2,6 +2,7 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "baseUrl": "src",
+    "skipLibCheck": true,
     "strict": true,
     "paths": {
       "@app/*": ["./app/*"], 
@@ -14,5 +15,7 @@
       "@utils/*": ["./utils/*"], 
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts", "src/pages/auth/dqwdqd.js"],
+  "exclude": ["node_modules"],
+  "compileOnSave": true
 }

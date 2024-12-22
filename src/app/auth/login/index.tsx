@@ -1,4 +1,4 @@
-import Login from '@pages/login/Login.page';
+import Login from '@pages/auth/login/Login.page';
 import React from 'react';
 
 export default function LoginRoute() {
