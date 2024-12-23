@@ -1,8 +1,15 @@
 {
   "welcome": "Welcome",
   "login_screen": {
-    "title": "Login",
+    "title": "LOGIN",
+    "introduction": "Welcome to Techician Time Clock",
     "username": "Username",
-    "password": "Password"
+    "password": "Password",
+    "login_button_label": "Login",
+    "errors": {
+      "enter_a_valid_email": "Enter a valid email",
+      "couldnt_find_your_account": "Couldn't find your account",
+      "wrong_password_try_again": "Wrong password. Try again or click Forgot password to reset it."
+    }
   }
 }

@@ -1,8 +1,7 @@
-import font from '@theme/font';
-import { configureFonts, DefaultTheme } from 'react-native-paper';
+import { DefaultTheme } from 'react-native-paper';
 
 const lightTheme = {
-  ...DefaultTheme, // or MD3DarkTheme
+  ...DefaultTheme,
   colors: {
     // main color
     mainColorODark900: '#EF4623',
@@ -13,6 +12,7 @@ const lightTheme = {
     mainColorSuccessGreen600: '#4EB800',
     mainColorWarningYellow500: '#FFB400',
     mainColorErrorRed500: '#F0383E',
+    mainColorTextWhite: '#FFFFFF',
     // orange dark
     orangeDark50: '#FEF8F6',
     orangeDark100: '#FEF4F2',
@@ -112,10 +112,22 @@ const lightTheme = {
     white700: '#ffffffb3',
     white800: '#ffffffcc',
     white900: '#ffffffe6',
+    // text
+    textPrimary: '#4C4C4E',
+    textSubtitle: '#4C4C4E99',
+    textSecondary: '#4C4C4ECC',
+    textFocused: '#4C4C4E99',
+    textDisabled: '#4C4C4E66',
+    // text field border:
+    textFieldBorderFilled: '#4c4c4e4d',
+    textFieldBorderHover: '#4c4c4ecc',
+    textFieldBorderDisabled: '#4c4c4e66',
+    // BG
+    background: '#FFFFFF',
+    backgroundInputFilled: '#4C4C4E0F',
+    backgroundInputHover: '#4C4C4E1A',
+    backgroundDisabled: '#4C4C4E0A',
   },
-  fonts: configureFonts({
-    config: font,
-  }),
 };
 
 export default lightTheme;

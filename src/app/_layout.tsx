@@ -1,10 +1,11 @@
 import './../i18n'; // This line imports the i18n configuration
-import { useColorScheme } from 'react-native';
+import { StatusBar, useColorScheme } from 'react-native';
 import { PaperProvider } from 'react-native-paper';
-import darkTheme from '@theme/themes/dark';
-import lightTheme from '@theme/themes/light';
 import { SplashScreen, Stack, useRouter } from 'expo-router';
 import { useEffect } from 'react';
+import { AppTheme } from '@theme/theme';
+import lightTheme from '@theme/themes/light';
+import darkTheme from '@theme/themes/dark';
 
 export default function RootLayout() {
   const router = useRouter();
@@ -22,7 +23,8 @@ export default function RootLayout() {
   }, [router]);
 
   return (
-    <PaperProvider theme={colorScheme === 'dark' ? darkTheme : lightTheme}>
+    <PaperProvider theme={colorScheme === 'dark' ? darkTheme : (lightTheme as AppTheme)}>
+      <StatusBar translucent backgroundColor={'transparent'} />
       <Stack
         screenOptions={{
           headerShown: false, // Customize this as needed
