@@ -34,7 +34,17 @@
           "backgroundColor": "#ffffff"
         }
       ],
-      "expo-localization"
+      "expo-localization",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./src/assets/fonts/OpenSans-Bold.ttf",
+            "./src/assets/fonts/OpenSans-Regular.ttf",
+            "./src/assets/fonts/OpenSans-SemiBold.ttf"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,
